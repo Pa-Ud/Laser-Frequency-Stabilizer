@@ -1,3 +1,4 @@
+//Author Dr Matthew Harvey, United Kingdoms, 2018
 #include <AD9850.h>
 
 AD9850 ad(0, 1, 2); // w_clk, fq_ud, d7
