@@ -181,7 +181,7 @@ void loop() {
   //MAIN ALGORITHM
     Bi = analogRead(Bpin);
     t0 = micros();
-    while (micros() - t0 < 20*2*1000000/f0)  //Do while loop for xxx microsecond
+    while (micros() - t0 < 40*1000000/B_freq)  //Do while loop for 40 cycle of Bfreq
     {if (analogRead(VPDac)>Vmean)
         { Bf = analogRead(Bpin);
             Product = Product - (Bf - Bi);
